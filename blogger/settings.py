@@ -57,7 +57,11 @@ PROJECT_APPS = [
     'accountapp.apps.AccountappConfig',
 ]
 
-INSTALLED_APPS =  DJANGO_APPS + PROJECT_APPS
+THIRD_APPS = [
+    'bootstrap4',
+]
+
+INSTALLED_APPS =  DJANGO_APPS + PROJECT_APPS + THIRD_APPS
 
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',
