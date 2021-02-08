@@ -28,7 +28,6 @@ def hello_world(request):
         return render(request, 'accountapp/hello_world.html', context={'hello_world_list': hello_world_list})
 
 
-
 class AccountCreateView(CreateView):
     model = User
     form_class = UserCreationForm
