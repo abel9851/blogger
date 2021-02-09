@@ -55,6 +55,7 @@ DJANGO_APPS = [
 
 PROJECT_APPS = [
     'accountapp.apps.AccountappConfig',
+    'accountapp.apas.ProfileappConfig',
 ]
 
 THIRD_APPS = [
