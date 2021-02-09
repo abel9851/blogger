@@ -54,15 +54,15 @@ DJANGO_APPS = [
 ]
 
 PROJECT_APPS = [
-    'accountapp.apps.AccountappConfig',
-    'profileapp.apps.ProfileappConfig',
+    'accountapp',
+    'profileapp',
 ]
 
 THIRD_APPS = [
     'bootstrap4',
 ]
 
-INSTALLED_APPS =  DJANGO_APPS + PROJECT_APPS + THIRD_APPS
+INSTALLED_APPS = DJANGO_APPS + PROJECT_APPS + THIRD_APPS
 
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',
@@ -154,5 +154,4 @@ LOGIN_REDIRECT_URL = reverse_lazy('accountapp:hello_world')
 LOGOUT_REDIRECT_URL = reverse_lazy('accountapp:login')
 
 MEDIA_URL = '/media/'
-
 MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
