@@ -57,6 +57,7 @@ PROJECT_APPS = [
     'accountapp',
     'profileapp',
     'articleapp',
+    'commentapp',
 ]
 
 THIRD_APPS = [
