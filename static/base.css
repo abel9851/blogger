@@ -1,22 +1,41 @@
+a {
+    color:black;
+    text-decoration: none;
+}
 
-.blogger_header{
+a:hover {
+    color: black;
+    text-decoration: none;
+}
+
+.blogger_header {
     text-align: center; margin: 2rem 0;
 }
 
-.blogger_logo{
+.blogger_logo {
     font-family: 'Lobster', cursive;
 }
 
-.blogger_footer{
+.blogger_footer {
     text-align:center; margin-top: 2rem;
 }
 
-.blogger_footer_button{
+.blogger_footer_button {
     font-size: 0.9rem;
-    }
+}
 
 @media screen and (max-width:500px) {
     html {
         font-size: 13px;
-    }
+        }
+}
+
+
+.blogger_header_nav {
+    margin: 0, 10rem;
+}
+
+
+.blogger_header_navbar {
+    margin: 1rem 0;
 }
