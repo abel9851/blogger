@@ -23,8 +23,8 @@
                     Subscribe
                 </a>
             {% else %}
-                <a href="{% url 'subscribeapp:subscribe' %}?project_pk={{ target_project.pk }}"
-                    class="btn btn-dark rounded-pill px-4">
+            <a href="{% url 'subscribeapp:subscribe' %}?project_pk={{ target_project.pk }}"
+                class="btn btn-dark rounded-pill px-4">
                     Unsubscribe
                 </a>
             {% endif %}
