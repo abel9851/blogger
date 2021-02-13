@@ -22,18 +22,18 @@
                     class="btn btn-primary rounded-pill px-4">
                     Subscribe
                 </a>
-            {% else %}
-            <a href="{% url 'subscribeapp:subscribe' %}?project_pk={{ target_project.pk }}"
-                class="btn btn-dark rounded-pill px-4">
-                    Unsubscribe
-                </a>
-            {% endif %}
+                {% else %}
+                <a href="{% url 'subscribeapp:subscribe' %}?project_pk={{ target_project.pk }}"
+                    class="btn btn-dark rounded-pill px-4">
+                        Unsubscribe
+                    </a>
+                {% endif %}
             {% endif %}
         </div>
 
 
         <div>
-            {% include 'snippets/list_fragment.html ' with article_list=object_list %}
+            {% include 'snippets/list_fragment.html' with article_list=object_list %}
         </div>
     </div>
 {% endblock %}
